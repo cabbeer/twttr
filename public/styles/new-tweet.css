@@ -1,0 +1,26 @@
+.tweet-box {
+  /* background-color: red; */
+  /* background-color: rgba(248,248,252,.85); */
+  -webkit-backdrop-filter: blur(15px) saturate(86%);
+  /* backdrop-filter: blur(15px) saturate(86%); */
+  /* -webkit-transition: background-color .2s cubic-bezier(.32,.08,.24,1); */
+  /* transition: background-color .2s cubic-bezier(.32,.08,.24,1); */
+  /* background-color: #dceefd; */
+  background: orange;
+  /* border-radius: 10px; */
+  display: flex;
+  margin-top: 3vh;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.tweet-box > form {
+  display: flex;
+  flex-direction: column;
+}
+.tweet-controls {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 3vh 0;
+}

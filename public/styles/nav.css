@@ -1,0 +1,35 @@
+
+ nav {
+  min-height: 120px;
+  display: flex;
+  color: white;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(37,38,40,.21);
+  background-image: radial-gradient(circle at 25%,hsla(0,0%,100%,.2),rgba(50,50,50,.2) 80%);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  justify-content: space-around;
+ }
+
+ #logo {
+  font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  margin-right: auto;
+ }
+
+ #new-tweet {
+  padding: 10px;
+  margin-right: 1.5em;
+ }
+
+ #new-tweet:hover {
+    inset: 3px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s;
+ }
+
