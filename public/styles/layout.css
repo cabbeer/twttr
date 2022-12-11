@@ -58,6 +58,16 @@ CSS for individual tweet elements
                 
 }
 
+.tweet-post > section {
+  padding: 2vw 2vh;
+}
+
 .tweet-post:hover {
   box-shadow: -10px 8px 0px rgb(196 181 253);
+}
+
+.tweet-post > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

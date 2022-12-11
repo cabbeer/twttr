@@ -9,7 +9,7 @@
   background: orange;
   /* border-radius: 10px; */
   display: flex;
-  margin-top: 3vh;
+  margin: 3vh 0;
   flex-direction: column;
   padding: 1em;
 }
