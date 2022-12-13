@@ -36,7 +36,7 @@ $(document).ready(function () {
         </section>
 
         <footer>
-          <time>${timeago.format(obj.created_at)}</time>
+          <time id="time">${timeago.format(obj.created_at)}</time>
           <a><i class="fa-solid fa-flag"></i></a>
           <a><i class="fa-solid fa-retweet"></i></a>
           <a><i class="fa-regular fa-heart"></i></a>
@@ -62,9 +62,9 @@ $(document).ready(function () {
 
     //Garurds leading to successful tweet
     if ($newTweetText.length < 1) {
-      $("#error-blank").slideDown();
+      $("#err-undefined").slideDown();
     } else if ($newTweetText.length > 140) {
-      $("#error-exceed").slideDown();
+      $("#err-exceed").slideDown();
     } else {
       const $formData = $(this).serialize();
 

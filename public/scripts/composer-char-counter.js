@@ -17,7 +17,7 @@ $(document).ready(function () {
     if (currentLength > 140) {
       counterEle.style.color = "red";
     } else {
-      counterEle.style.color = "black";
+      counterEle.style.color = "inherit";
     }
   });
 

@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,35 +18,33 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #f2f2f2;
   font-size: 24px;
   /* font-family: 'Bungee', cursive; */
-  font-family: 'Source Sans Pro', sans-serif;
-
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
- main {
-  max-width: 90vw;
+main {
+  margin-left: 35vw;
   margin: 0 auto;
   min-height: 100vh;
-  /* max-width: 90%; */
- }
-
+  max-width: 90%;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-
- .profile {
+.profile {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 700px;
-  background-image: linear-gradient( 135deg, #5efce83d 10%, #736efe40 100%);
- }
-
+  background-image: linear-gradient(135deg, #5efce83d 10%, #736efe40 100%);
+}
 
 /* 
 CSS for individual tweet elements
@@ -52,33 +52,154 @@ CSS for individual tweet elements
 
 .tweet-box p {
   width: 100%;
-  border: 4px solid red;
   text-align: center;
-  color: red;
-  padding: 1em;
+  color: rgb(215, 8, 8);
+  border: 5px solid rgb(215, 8, 8);
+  padding: 1vw;
   display: none;
+  border-radius: 5px;
 }
 
-
-
 .tweet-post {
-
   border: 3px solid #000;
   border-radius: 5px;
   color: #282828;
-                
+  background: white;
+}
+
+.display-tweets {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-post header {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  font-weight: 400;
+  padding: 1vh;
+  /* align-items: flex-end; */
+  flex-wrap: nowrap;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .tweet-post > section {
   padding: 2vw 2vh;
+  font-weight: 600;
 }
 
 .tweet-post:hover {
   box-shadow: -10px 8px 0px rgb(196 181 253);
 }
 
+.tweet-post header:first-child {
+  /* flex-basis: 160px; */ /* margin: 0 auto; */
+
+}
+.tweet-post header a:nth-child(2) {
+  /* flex-basis: 200px; */
+  margin: 0 auto;
+  margin-left: 0px;
+}
+.tweet-post header a:nth-child(3) {
+  margin-left: 0px;
+}
+
 .tweet-post > footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  color: rgb(118, 118, 123);
+  gap: 2vw;
+  padding: 1vw;
+}
+
+.tweet-post > time {
+        margin: 0 auto;
+    margin-left: 0px;
+}
+
+time#time {
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+.tweet-post > footer a:hover {
+  color:#1ed760;
+}
+
+.load-tweets {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
+  gap: 3vh;
+}
+
+#tweetBtn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ed760;
+  height: 48px;
+}
+
+#tweetBtn:hover {
+  transform: scale(1.04);
+  background-color: #21e065;
+}
+
+
+/* Media Queries for large viewports */
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  body {
+    flex-direction: row;
+  }
+  .profile {
+    align-self: stretch;
+    height: 100vh;
+    max-width: 35vw;
+    position: fixed;
+  }
+  .container {
+    margin-top: 12vh;
+    margin-left: 30vw;
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 12vh;
+    margin-left: 35vw;
+  }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
 }

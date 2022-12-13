@@ -72,14 +72,14 @@
       </div>
       <br />
       <div>
-        <h2>Your Name</h2>
+        <h2>Chris P. Bacon</h2>
       </div>
     </header>
 
     <!-- Page-(main) content here -->
     <main class="container">
       <section class="tweet-box">
-        <p id="error-exceed">A tweet can only be 140 characters.. Simplify and try again</p>
+        <p id="err-exceed">A tweet can only be 140 characters.. Simplify and try again</p>
         <p id="err-undefined">This tweet is blank</p>
         <form
           action="/tweets"
@@ -88,8 +88,8 @@
           enctype="application/x-www-form-urlencoded"
           content-type="application/x-www-form-urlencoded"
         >
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="nt-input"></textarea>
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea name="text" placeholder="What's on your mind?" id="nt-input"></textarea>
           <div class="tweet-controls">
             <button id="tweetBtn" type="submit">Tweet</button>
             <output name="counter" class="counter" id="nt-counter">140</output>
